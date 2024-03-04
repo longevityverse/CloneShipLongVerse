@@ -10,8 +10,8 @@ export async function generateMetadata({ params }) {
   const article = articles.find((article) => article.slug === params.articleId);
 
   return getSEOTags({
-    title: article.title,
-    description: article.description,
+    title: `${article.title} - LongevityVerse`,
+    description: `${article.description} - Discover more on LongevityVerse blog.`,
     canonicalUrlRelative: `/blog/${article.slug}`,
     extraTags: {
       openGraph: {
@@ -39,8 +39,8 @@ export default async function Article({ params }) {
       (a) =>
         a.slug !== params.articleId &&
         a.categories.some((c) =>
-          article.categories.map((c) => c.slug).includes(c.slug)
-        )
+          article.categories.map((c) => c.slug).includes(c.slug),
+        ),
     )
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
     .slice(0, 3);
@@ -123,6 +123,12 @@ export default async function Article({ params }) {
           <p className="text-base-content/80 md:text-lg max-w-[700px]">
             {article.description}
           </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 md:mb-8">
+            {article.title} - Insights from LongevityVerse
+          </h1>
+          <p className="text-base-content/80 md:text-lg max-w-[700px]">
+            Explore in-depth discussions and expert insights on longevity.
+          </p>
         </section>
 
         <div className="flex flex-col md:flex-row">
@@ -135,8 +141,8 @@ export default async function Article({ params }) {
 
             {articlesRelated.length > 0 && (
               <div className="hidden md:block mt-12">
-                <p className=" text-base-content/80 text-sm  mb-2 md:mb-3">
-                  Related reading
+                <p className="text-base-content/80 text-sm mb-2 md:mb-3">
+                  Related Longevity Topics
                 </p>
                 <div className="space-y-2 md:space-y-5">
                   {articlesRelated.map((article) => (
