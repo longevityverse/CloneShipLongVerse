@@ -26,18 +26,20 @@ const config = {
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Starter",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "Perfect for individuals looking for longevity procedures",
         // The price you want to display, the one user will be charged on Stripe.
         price: 79,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
         priceAnchor: 99,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Individual package",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          {
+            name: "Private consultation with partner longevity institutions and professionals.",
+          },
+          { name: "Personalized Longevity Plan" },
+          { name: "Longevity Marketplace" },
         ],
       },
       {
@@ -53,13 +55,35 @@ const config = {
         priceAnchor: 149,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Longevity Protocol Builder",
+            description:
+              "A powerful tool that allows clinics and experts to create, manage, and share their longevity protocols with patients and the LongevityVerse community.",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          {
+            name: "Patient Portal Integration",
+            description:
+              "Seamless integration with existing patient portals, enabling clinics and experts to securely access and manage patient data, treatment records, and longevity plans.",
+          },
+          {
+            name: "Personalized Treatment Plans",
+            description:
+              "A comprehensive platform for creating and managing personalized treatment plans tailored to each patient's unique needs, goals, and health profile.",
+          },
+          {
+            name: "Automated Communications",
+            description:
+              "Advanced communication tools for sending automated appointment reminders, treatment updates, and personalized health tips to patients, streamlining the clinic's workflow.",
+          },
+          {
+            name: "Continuous Learning Resources",
+            description:
+              "Access to a vast library of educational resources, including the latest research findings, webinars, and best practices, empowering clinics and experts to stay ahead in the field of longevity.",
+          },
+          {
+            name: "Priority Support",
+            description:
+              "Dedicated priority support from our team of longevity experts, ensuring that clinics and experts receive prompt assistance and guidance for any questions or issues they may encounter.",
+          },
         ],
       },
     ],
@@ -78,9 +102,9 @@ const config = {
     // REQUIRED — Email 'From' field to be used when sending other emails, like abandoned carts, updates etc..
     fromAdmin: `Marc at ShipFast <marc@mg.shipfa.st>`,
     // Email shown to customer if need support. Leave empty if not needed => if empty, set up Crisp above, otherwise you won't be able to offer customer support."
-    supportEmail: "marc@mg.shipfa.st",
+    supportEmail: "csa.balogh.0165@gmail.com",
     // When someone replies to supportEmail sent by the app, forward it to the email below (otherwise it's lost). If you set supportEmail to empty, this will be ignored.
-    forwardRepliesTo: "marc.louvion@gmail.com",
+    forwardRepliesTo: "csa.balogh.0165@gmail.com",
   },
   colors: {
     // REQUIRED — The DaisyUI theme to use (added to the main layout.js). Leave blank for default (light & dark mode). If you any other theme than light/dark, you need to add it in config.tailwind.js in daisyui.themes.
