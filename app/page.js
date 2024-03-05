@@ -14,7 +14,7 @@ export default function Page() {
             Discover, connect, and engage with the longevity community. Explore
             the latest in health, wellness, and longevity science.
           </p>
-          <Link href="/hub" passHref>
+          <Link href="/hub" passHref legacyBehavior>
             <button className="btn btn-primary">Explore the Hub</button>
           </Link>
           <Link href="/blog" passHref legacyBehavior>

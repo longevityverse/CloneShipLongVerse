@@ -20,7 +20,7 @@ const CardArticle = ({
           className="link link-hover hover:link-primary"
           title={article.title}
           rel="bookmark"
-        >
+          legacyBehavior>
           <figure>
             <Image
               src={article.image.src}
@@ -51,7 +51,7 @@ const CardArticle = ({
             className="link link-hover hover:link-primary"
             title={article.title}
             rel="bookmark"
-          >
+            legacyBehavior>
             {article.title}
           </Link>
         </TitleTag>

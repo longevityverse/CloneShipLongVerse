@@ -10,7 +10,7 @@ const Category = ({ category, extraStyle }) => {
       }`}
       title={`Posts in ${category.title}`}
       rel="tag"
-    >
+      legacyBehavior>
       {category.titleShort}
     </Link>
   );

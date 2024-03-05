@@ -48,7 +48,7 @@ const Header = () => {
             className="flex items-center gap-2 shrink-0 "
             href="/"
             title={`${config.appName} hompage`}
-          >
+            legacyBehavior>
             <Image
               src={logo}
               alt={`${config.appName} logo`}
@@ -94,7 +94,7 @@ const Header = () => {
               key={link.href}
               className="link link-hover"
               title={link.label}
-            >
+              legacyBehavior>
               {link.label}
             </Link>
           ))}
@@ -115,7 +115,7 @@ const Header = () => {
               className="flex items-center gap-2 shrink-0 "
               title={`${config.appName} hompage`}
               href="/"
-            >
+              legacyBehavior>
               <Image
                 src={logo}
                 alt={`${config.appName} logo`}
@@ -160,7 +160,7 @@ const Header = () => {
                     key={link.href}
                     className="link link-hover"
                     title={link.label}
-                  >
+                    legacyBehavior>
                     {link.label}
                   </Link>
                 ))}

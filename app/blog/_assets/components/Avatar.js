@@ -9,7 +9,7 @@ const Avatar = ({ article }) => {
       title={`Posts by ${article.author.name}`}
       className="inline-flex items-center gap-2 group"
       rel="author"
-    >
+      legacyBehavior>
       <span itemProp="author">
         <Image
           src={article.author.avatar}

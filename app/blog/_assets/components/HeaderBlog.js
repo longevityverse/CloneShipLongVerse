@@ -54,15 +54,15 @@ const ButtonPopoverCategories = () => {
           <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="bg-white divide-y divide-gray-100">
               {categories.map((category) => (
-                <Link
+                (<Link
                   key={category.slug}
                   href={`/blog/category/${category.slug}`}
                   passHref
-                >
-                  <a className="flex items-center p-3 hover:bg-gray-50">
-                    {category.name}
-                  </a>
-                </Link>
+                  className="flex items-center p-3 hover:bg-gray-50">
+
+                  {category.name}
+
+                </Link>)
               ))}
             </div>
           </div>
@@ -79,18 +79,22 @@ const HeaderBlog = () => {
         <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
           <div className="flex items-center">
             <Link href="/" passHref>
-              <a>
-                <span className="sr-only">{config.appName}</span>
-                <Image src={logo} alt="Logo" width={40} height={40} />
-              </a>
+
+              <span className="sr-only">{config.appName}</span>
+              <Image src={logo} alt="Logo" width={40} height={40} />
+
             </Link>
             <div className="hidden ml-10 space-x-8 lg:block">
               {links.map((link) => (
-                <Link key={link.href} href={link.href} passHref>
-                  <a className="text-base font-medium text-white hover:text-indigo-50">
-                    {link.label}
-                  </a>
-                </Link>
+                (<Link
+                  key={link.href}
+                  href={link.href}
+                  passHref
+                  className="text-base font-medium text-white hover:text-indigo-50">
+
+                  {link.label}
+
+                </Link>)
               ))}
             </div>
           </div>

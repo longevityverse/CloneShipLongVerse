@@ -26,7 +26,7 @@ const ButtonSignin = ({ text = "Get started", extraStyle }) => {
       <Link
         href={config.auth.callbackUrl}
         className={`btn ${extraStyle ? extraStyle : ""}`}
-      >
+        legacyBehavior>
         {session.user?.image ? (
           <img
             src={session.user?.image}

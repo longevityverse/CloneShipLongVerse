@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
   return (
     <main className="max-w-xl mx-auto">
       <div className="p-5">
-        <Link href="/" className="btn btn-ghost">
+        <Link href="/" className="btn btn-ghost" legacyBehavior>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"

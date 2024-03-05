@@ -100,7 +100,7 @@ export default function Custom404() {
       </p>
 
       <div className="flex flex-wrap gap-4 justify-center">
-        <Link href="/" className="btn btn-sm">
+        <Link href="/" className="btn btn-sm" legacyBehavior>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"

@@ -10,7 +10,7 @@ const CardCategory = ({ category, tag = "h2" }) => {
       href={`/blog/category/${category.slug}`}
       title={category.title}
       rel="tag"
-    >
+      legacyBehavior>
       <TitleTag className="md:text-lg font-medium">
         {category?.titleShort || category.title}
       </TitleTag>
