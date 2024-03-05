@@ -10,8 +10,8 @@ export async function generateMetadata({ params }) {
   const article = articles.find((article) => article.slug === params.articleId);
 
   return getSEOTags({
-    title: `${article.title} - LongevityVerse`,
-    description: `${article.description} - Discover more on LongevityVerse blog.`,
+    title: article.title,
+    description: article.description,
     canonicalUrlRelative: `/blog/${article.slug}`,
     extraTags: {
       openGraph: {
@@ -123,12 +123,6 @@ export default async function Article({ params }) {
           <p className="text-base-content/80 md:text-lg max-w-[700px]">
             {article.description}
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 md:mb-8">
-            {article.title} - Insights from LongevityVerse
-          </h1>
-          <p className="text-base-content/80 md:text-lg max-w-[700px]">
-            Explore in-depth discussions and expert insights on longevity.
-          </p>
         </section>
 
         <div className="flex flex-col md:flex-row">
@@ -141,8 +135,8 @@ export default async function Article({ params }) {
 
             {articlesRelated.length > 0 && (
               <div className="hidden md:block mt-12">
-                <p className="text-base-content/80 text-sm mb-2 md:mb-3">
-                  Related Longevity Topics
+                <p className=" text-base-content/80 text-sm  mb-2 md:mb-3">
+                  Related reading
                 </p>
                 <div className="space-y-2 md:space-y-5">
                   {articlesRelated.map((article) => (
