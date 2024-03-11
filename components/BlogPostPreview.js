@@ -15,11 +15,11 @@ const BlogPostPreview = ({ post }) => (
 );
 
 function handleComment() {
-  // logic to handle comment
+  
 }
 
 function handleShare() {
-  // logic to handle share
+  
 }
 
 export default BlogPostPreview;
