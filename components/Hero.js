@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="lg:w-full">
         {/* Replace with an image that reflects LongevityVerse's branding and mission */}
         <Image
-          src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80" // Replace with your actual image URL
+          src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
           alt="LongevityVerse Lifestyle"
           className="w-full"
           priority={true}
