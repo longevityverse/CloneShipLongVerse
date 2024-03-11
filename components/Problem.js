@@ -47,7 +47,7 @@ const Problem = () => {
           The path to longevity is often obscured by myths and misinformation
         </h2>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
-          Without clear guidance, it's easy to fall prey to quick fixes that
+          Without clear guidance, it&apos;s easy to fall prey to quick fixes that
           promise much but deliver little.
         </p>
 
