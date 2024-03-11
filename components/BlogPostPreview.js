@@ -1,4 +1,4 @@
-// components/BlogPostPreview.js
+
 import Link from "next/link";
 
 const BlogPostPreview = ({ post }) => (
