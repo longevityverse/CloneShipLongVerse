@@ -15,11 +15,10 @@ const BlogPostPreview = ({ post }) => (
 );
 
 function handleComment() {
-  {/* Add these: */}
+  router.push(`/blog/${post.slug}#comments`);
 }
 
 function handleShare() {
-  {/* Add these: */}
   navigator.clipboard.writeText(window.location.href + `/blog/${post.slug}`).then(() => {
     toast.success('Link copied to clipboard!');
   }, (err) => {
