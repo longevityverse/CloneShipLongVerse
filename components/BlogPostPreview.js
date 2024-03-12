@@ -20,6 +20,11 @@ function handleComment() {
 
 function handleShare() {
   {/* Add these: */}
+  navigator.clipboard.writeText(window.location.href + `/blog/${post.slug}`).then(() => {
+    toast.success('Link copied to clipboard!');
+  }, (err) => {
+    toast.error('Failed to copy link.');
+  });
 }
 
 export default BlogPostPreview;
