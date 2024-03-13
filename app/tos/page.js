@@ -9,9 +9,9 @@ export const metadata = getSEOTags({
 
 const TOS = () => {
   const currentDate = new Date().toLocaleDateString("en-US", {
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric'
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   });
 
   return (
@@ -24,7 +24,10 @@ const TOS = () => {
           Terms and Conditions for {config.appName}
         </h1>
 
-        <pre className="leading-relaxed whitespace-pre-wrap" style={{ fontFamily: "sans-serif" }}>
+        <pre
+          className="leading-relaxed whitespace-pre-wrap"
+          style={{ fontFamily: "sans-serif" }}
+        >
           {`Last Updated: ${currentDate}
 
 Welcome to LongevityVerse!
@@ -49,7 +52,7 @@ We collect non-personal data such as web cookies to enhance our services and use
 
 5. Governing Law
 
-These Terms are governed by the laws of France.
+These Terms are governed by the laws of Hungary.
 
 6. Updates to the Terms
 
